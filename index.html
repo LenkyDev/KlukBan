@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+    <link rel="stylesheet" href="/src/UI/app.css">
+
+    <title>BAN BAN BAN</title>
+
+    <meta property="og:site_name" content="You've been gifted a subsciption!">
+    <meta property="og:title" content="Click here to redeem it!">
+    <meta property="og:description" content="KlukCZ#6589 has gifted you a Ban for ∞ months!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kluk.glitch.me">
+    <meta name="theme-color" content="#7289DA">
+</head>
+
+<body>
+
+    <div class="app-loader">
+        <span id="loader"></span>
+    </div>
+
+    <main>
+
+        <div class="card">
+            <div class="main-content">
+                <h1>You've been gifted a subsciption!</h1>
+                <p>KlukCZ#6589 has gifted you a Ban for ∞ months!</p>
+
+                <div class="actions">
+                    <button class="claim">Claim<span></span></button>
+                    <h2>Expires <strong>never</strong></h2>
+                </div>
+            </div>
+            <div class="logo"></div>
+        </div>
+
+    </main>
+
+    <footer>Made by Linkoss. Original concept by <strong>KlukCZ#6589</strong>.<a href="https://github.com/LinkossLink/KlukBan">GitHub</a></footer>
+    <!-- Make your browser do stuff -->
+    <script type="text/javascript" src="/src/UI/app.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector(".app-loader").classList.add("remove");
+            document.querySelector("main").classList.add("loaded");
+        });
+    </script>
+
+</body>
+</html>
