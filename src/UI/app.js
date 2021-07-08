@@ -6,9 +6,9 @@ function claim() {
         btn.innerText = "Claimed";
         btn.style.cursor = "not-allowed";
         setTimeout(() => {
-            window.location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }, 1000);
-    }, 1000);
+    }, 1500);
 };
 async function click() {
     btn.innerText = "";
