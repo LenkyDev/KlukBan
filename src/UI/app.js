@@ -13,9 +13,9 @@ function claim() {
 async function click() {
     btn.innerText = "";
     btn.style.background = "#373a41";
+    await btn.insertAdjacentHTML("beforeend", `<div class="loader"><span class="dot" style="--d:1;"></span><span class="dot" style="--d:2;"></span><span class="dot" style="--d:3;"></span></div>`);
     btn.style.cursor = "wait";
     btn.classList.add("disabled");
     claim();
     btn.removeEventListener("click", click, false);
-    await btn.insertAdjacentHTML("beforeend", `<div class="loader"><span class="dot" style="--d:1;"></span><span class="dot" style="--d:2;"></span><span class="dot" style="--d:3;"></span></div>`)
 };

@@ -11,7 +11,7 @@
 }
 
 html {
-	font-family: 'Poppins', sans-serif;
+	font-family: Whitney, "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
 	font-size: 10px;
 	box-sizing: border-box;
 }
@@ -97,8 +97,10 @@ main.loaded {
 
 .card p {
 	color: #74767a;
-	font-size: 15px;
+	font-size: 16px;
 	margin-top: 3px;
+	display: flex;
+    align-items: center;
 }
 
 .card h2 {
@@ -120,7 +122,7 @@ main.loaded {
 	overflow: hidden !important;
 }
 
-.card button span {
+.card button span#effect {
 	position: absolute;
 	top: 0;
 	left: -30%;
@@ -128,7 +130,7 @@ main.loaded {
 	width: 20%;
 	height: 100%;
 	background: #fff;
-	opacity: 0.6;
+	opacity: 0.9;
 	transform: skew(10deg);
 	transition: 0.5s cubic-bezier(.46,.23,.34,.95);
 	animation: slide 1.5s infinite;
@@ -147,6 +149,10 @@ main.loaded {
 	animation: none;
 }
 
+.card button:hover span#effect {
+	opacity: 0.6;
+}
+
 .card button:active {
 	transform: translateY(5px);
 	animation: none;
@@ -163,6 +169,20 @@ main.loaded {
 
 .card button.disabled:active {
     transform: translateY(0);
+}
+
+.card #months {
+	color: #bdbec1;
+	margin-left: 1px;
+}
+
+.card #infinity {
+	font-size: 30px;
+	color: #bdbec1;
+}
+
+.card #never {
+	margin-left: 3px;
 }
 
 .app-loader {
