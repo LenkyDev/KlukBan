@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1024, user-scalable=no">
+    <!-- <meta name="viewport" content="width=1024, user-scalable=no"> -->
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/src/UI/app.css">
 
     <title>BAN BAN BAN</title>
@@ -27,27 +29,42 @@
         <div class="card">
             <div class="main-content">
                 <h1>You've been gifted a subsciption!</h1>
-                <p>KlukCZ#6589 has gifted you a Ban for <strong id="infinity">∞</strong> <strong id="months">months</strong>!</p>
+                <div class="logo-mobile"></div>
+                <p>KlukCZ#6589 has gifted you a Ban for <strong id="infinity">∞</strong> <strong
+                        id="months">months</strong>!</p>
 
                 <div class="actions">
-                    <button class="claim">Claim<span id="effect"></span></button>
+                    <button class="claim">Accept<span id="effect"></span></button>
                     <h2>Expires<strong id="never">never</strong></h2>
                 </div>
             </div>
             <div class="logo"></div>
         </div>
 
+        <div class="card-mobile">
+            <div class="main-content">
+                <h1>A WILD GIFT APPEARS!</h1>
+                <div class="container">
+                    <div class="logo-container">
+                        <div class="logo"></div>
+                    </div>
+                    <div class="text-container">
+                        <p>KlukCZ#6589 has gifted you a Ban for <strong id="infinity">∞</strong> <strong
+                                id="months">months</strong>!</p>
+                        <h2>Expires<strong id="never">never</strong></h2>
+                    </div>
+                </div>
+
+                <button class="claim">Accept<span id="effect"></span></button>
+            </div>
+        </div>
+
     </main>
 
-    <footer>Made by Linkoss. Original concept by <strong>KlukCZ#6589</strong>.<a href="https://github.com/LinkossLink/KlukBan">GitHub</a></footer>
+    <footer>Made by Linkoss. Original concept by <strong>KlukCZ#6589</strong>.<a
+            href="https://github.com/LinkossLink/KlukBan">GitHub</a></footer>
     <!-- Make your browser do stuff -->
     <script type="text/javascript" src="/src/UI/app.js"></script>
-    <script>
-        window.addEventListener("load", () => {
-            document.querySelector(".app-loader").classList.add("remove");
-            document.querySelector("main").classList.add("loaded");
-        });
-    </script>
-
 </body>
+
 </html>
