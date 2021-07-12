@@ -98,7 +98,7 @@ main.loaded {
 .card {
     display: flex;
     background-color: #212226;
-    width: 800px;
+    width: 750px;
     height: 210px;
     border-radius: 10px;
     overflow: hidden;
@@ -235,6 +235,7 @@ main.loaded {
 
 .card-mobile .container {
 	display: flex;
+	align-items: center;
 	margin-top: 10px;
 }
 
@@ -255,6 +256,7 @@ main.loaded {
 .card-mobile .text-container {
 	display: flex;
 	flex-direction: column;
+	height: 40px;
 	align-items: flex-start;
 	justify-content: space-between;
 }
@@ -307,8 +309,24 @@ main.loaded {
     color: #fdfdfd;
     font-weight: bold;
 	transition: 200ms;
-	animation: float 1.8s ease-in-out infinite;
+	animation: float 2.8s ease-in-out infinite;
 	overflow: hidden !important;
+}
+
+.card-mobile button span#effect {
+	position: absolute;
+	top: 0;
+	left: -40%;
+	display: block;
+	width: 10%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.9;
+	transform: skew(10deg);
+	transition: 0.5s cubic-bezier(.46,.23,.34,.95);
+	animation: slide 1.8s infinite;
+	box-shadow: 0 0 25px 5px rgba(255, 255, 255, 1);
+	filter: brightness(1.3);
 }
 
 
